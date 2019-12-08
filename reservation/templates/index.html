@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% for x in bitch %}
+    <p>Max people {{ x.max_people }}</p>
+    <p>Min people {{ x.min_people }}</p>
+    <p>Quantity place {{ x.seats }}</p>
+    <a href="{% url 'detail' pk=x.pk %}"> <button> booking </button> </a>
+
+{% endfor %}
+
+</body>
+</html>
